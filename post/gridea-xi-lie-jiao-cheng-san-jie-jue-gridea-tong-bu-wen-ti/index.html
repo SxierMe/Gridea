@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="https://zhiqiu.vercel.app/favicon.ico" type="image/x-icon" /><meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/><meta name="apple-mobile-web-app-capable"content="yes"/><meta name="apple-mobile-web-app-status-bar-style"content="black"/><meta name="format-detection"content="telephone=no"/><meta name="renderer"content="webkit"><meta name="description"content="随缘分享。"><meta charset="UTF-8"><title>Gridea系列教程三：解决Gridea同步问题 | 之秋</title>
+<link href="https://zhiqiu.vercel.app/styles/main.css" type="text/css" rel="stylesheet" /><link href="https://at.alicdn.com/t/font_1621793_zatzzgvf30g.css" type="text/css" rel="stylesheet" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css"><script async src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.min.js"></script><script src="https://zhiqiu.vercel.app/media/js/magnify.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"></script>
+<script type="text/javascript">function btn_toggle(){document.getElementById("hn").classList.contains("no-js")?document.getElementById("hn").classList.remove("no-js"):document.getElementById("hn").classList.add("no-js")}</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y83LE2TXWN"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+	gtag('config', 'G-Y83LE2TXWN');
+</script>
+
+<link rel="canonical" href="https://zhiqiu.vercel.app/post/gridea-xi-lie-jiao-cheng-san-jie-jue-gridea-tong-bu-wen-ti/" />
+</head>
+<body>
+<div class="progress"></div><style>.progress{background:linear-gradient(to right,#87ceeb var(--scroll),transparent 0);background-repeat:no-repeat;position:fixed;width:100%;height:4px;z-index:1}</style><div class="darkmode-background"></div><div class="darkmode-layer"></div>
+<noscript><p class="warn" >本页面需要浏览器支持（启用）JavaScript</p></noscript><div class="header"><div class="logo_title"><div class="title animated fadeInDown"><a href="https://zhiqiu.vercel.app"><img alt="logo" style="display:inline-block;" src="https://zhiqiu.vercel.app/images/avatar.png"/></a><h1 title="之秋" class="weaklink"><a  href="/">之秋</a></h1>
+
+<div class="navbar weaklink">
+<div class="normal_nav">
+<div class="bitcron_nav_container"><div class="bitcron_nav"><div class="bitcron_nav"><div style="display:flex;justify-content:center;"><nav class="mixed_site_nav_wrap site_nav_wrap"><ul class="mixed_site_nav site_nav sm sm-base">	<li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a></li><li><a id="d2ef19af68cc211e98f8a0242ac110003" href="https://zhiqiu.vercel.app/tag/-SUFGLPsZ/" class="selected active current nav__item" >西厢</a></li><li><a id="d2ef19af68cc211e98f8a0242ac110003" href="https://zhiqiu.vercel.app/tag/cKe15wqX8/" class="selected active current nav__item" >技术</a></li><li><a id="d2ef19af68cc211e98f8a0242ac110003" href="https://zhiqiu.vercel.app/tag/PkviOmBYa/" class="selected active current nav__item" >效率</a></li><li><a id="d2ef19af68cc211e98f8a0242ac110003" href="https://wdnmdo.notion.site/c32dc94699f842b98b568ec289ad743d?pvs=4" class="selected active current nav__item" >数字难民</a></li><li><a id="d2ef19af68cc211e98f8a0242ac110003" href="https://gpt-5.vercel.app" class="selected active current nav__item" >AIGC</a></li><li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/post/about" class="selected active current nav__item" >关于</a></li></ul></nav>
+<div style="float:right;margin-top:1em"><form id="gridea-search-form" data-update="1578893743252" action="/search/index.html"><input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="Search..."></form></div><div style="margin-left:0.5em;margin-top:1.2em"><input id="switch_default" onclick="mobileBtn()" type="checkbox" class="switch_default"><label for="switch_default" class="toggleBtn"></label></div></div>
+<div class="clear clear_nav_inline_end"></div></div></div><div class="clear clear_nav_end"></div></div></div><div class="hamberger" href="javascript:void(0)" onclick="btn_toggle();"><i class="iconfont icon-category"></i></div></div></div></div>
+<div id="hn" class="no-js hidden_nav animated fadeInDown"><div class="bitcron_nav_container"><div class="bitcron_nav"><nav class="mixed_site_nav_wrap site_nav_wrap"><ul class="mixed_site_nav site_nav sm sm-base">	<li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a></li><li><a id="d2ef19af68cc211e98f8a0242ac110003" href="https://zhiqiu.vercel.app/tag/-SUFGLPsZ/" class="selected active current nav__item" >西厢</a></li><li><a id="d2ef19af68cc211e98f8a0242ac110003" href="https://zhiqiu.vercel.app/tag/cKe15wqX8/" class="selected active current nav__item" >技术</a></li><li><a id="d2ef19af68cc211e98f8a0242ac110003" href="https://zhiqiu.vercel.app/tag/PkviOmBYa/" class="selected active current nav__item" >效率</a></li><li><a id="d2ef19af68cc211e98f8a0242ac110003" href="https://wdnmdo.notion.site/c32dc94699f842b98b568ec289ad743d?pvs=4" class="selected active current nav__item" >数字难民</a></li><li><a id="d2ef19af68cc211e98f8a0242ac110003" href="https://gpt-5.vercel.app" class="selected active current nav__item" >AIGC</a></li><li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/post/about" class="selected active current nav__item" >关于</a></li></ul><div class="clear clear_nav_inline_end"></div></nav></div><div class="clear clear_nav_end"></div></div>
+<div style="display:flex;justify-content:center;inline-block;text-align:center;margin-top:7%"><div><form id="gridea-search-form" data-update="1686302271847" action="/search/index.html"><input class="search-input" autocomplete="off" spellcheck="false" name="q"  placeholder="Search..." /></form></div><div style="margin-left:0.5em"><input id="switch_default_h" onclick="mobileBtn()" type="checkbox" class="switch_default"><label for="switch_default" class="toggleBtn"></label></div></div>
+</div></div>
+<script>function enableDarkmode(){document.body.classList.add("darkmode"),document.getElementById("switch_default").checked=1,document.getElementById("switch_default_h").checked=1}function removeDarkmode(){document.body.classList.remove("darkmode"),document.getElementById("switch_default").checked=0,document.getElementById("switch_default_h").checked=0}function getCookie(a){var b,c=new RegExp("(^| )"+a+"=([^;]*)(;|$)");return(b=document.cookie.match(c))?unescape(b[2]):null}cookie=getCookie("darkmode"),"enable"==cookie&&enableDarkmode(),window.matchMedia("(prefers-color-scheme: dark)").matches&&"disable"!==cookie&&(enableDarkmode(),document.cookie="darkmode=enable; path=/");var mobileBtn=function(){1==document.getElementById("switch_default").checked?(enableDarkmode(),document.cookie="darkmode=enable; path=/"):(removeDarkmode(),document.cookie="darkmode=disable; path=/")};</script>
+
+<div class="main"><div class="main-inner"><div class="content">
+<article class="post">
+<h2 class="post_title sm_margin"><a>Gridea系列教程三：解决Gridea同步问题</a></h2>
+<script>function lan(){if(document.getElementById("lan").innerText=="繁"){var s=document.getElementById("tongwenlet_cn");if(s!=null){document.body.removeChild(s)}var s=document.createElement("script");s.language="javascript";s.type="text/javascript";s.src="https://cdn.jsdelivr.net/gh/qyxtim/Static@1.1/bookmarklet_tw.js";s.id="tongwenlet_cn";document.body.appendChild(s);document.getElementById("lan").innerHTML="简"}else{if(document.getElementById("lan").innerText=="簡"){var s=document.getElementById("tongwenlet_cn");if(s!=null){document.body.removeChild(s)}var s=document.createElement("script");s.language="javascript";s.type="text/javascript";s.src="https://cdn.jsdelivr.net/gh/qyxtim/Static@1.1/bookmarklet_cn.js";s.id="tongwenlet_cn";document.body.appendChild(s);document.getElementById("lan").innerHTML="繁"}}};</script>
+<section class="post_details"><i class="iconfont icon-calendar"></i><span style="margin-right:15px"> 2023-04-28</span><i class="iconfont icon-browse"></i><span style="margin-right:15px"> <span id="busuanzi_value_page_pv"></span> Views</span><i class="iconfont icon-category"></i><span class="weaklink" style="margin-right:15px">	<a href="https://zhiqiu.vercel.app/tag/cKe15wqX8/" class="tag">技术</a></span><i class="iconfont icon-caret-down"></i><span style="margin-right:15px">515字</span><i class="iconfont icon-naozhong"></i><span style="margin-right:15px">2 min read</span><a id="lan" href="javascript:void(0);"onclick="lan();"title="调整简繁体" style="margin-right:15px;">繁</a>
+</section>
+
+<img class="featureImg" alt="featureimg" src="https://s2.loli.net/2023/04/29/slufwqQa5rznoSR.png" referrerpolicy="no-referrer">
+
+<div style="display:flex">
+<div class="md_block" id="md_block">
+<div class="round-shape-one"></div>
+<p>有谁懂一个不懂程序的人解决Gridea同步问题是多么崩溃的？🤡</p>
+<!-- more -->
+<p>​	很多朋友第一次配置好之后，远程连接成功，然后满怀期待的点击同步按键，但猝不及防的是Gridea的<code>报错信息</code>。</p>
+<figure data-type="image" tabindex="1"><img src="https://s2.loli.net/2023/04/29/IuvfyOoFEWc8Jsa.png" alt="image-20230429090607577" loading="lazy"></figure>
+<h1 id="如何解决">如何解决？</h1>
+<p>​	像遇到这样的问题，我们首先是要找到报错的信息，然后通过报错的信息来一步步排除错误。</p>
+<p><strong>远程连接是否正常</strong></p>
+<ul>
+<li>
+<p>首先我们确认<code>远程连接</code>是正常的，有条件的同学可以直接选择<code>Proxy</code>模式。</p>
+<figure data-type="image" tabindex="2"><img src="https://s2.loli.net/2023/04/29/974dKtXEy23Wkjr.png" alt="image-20230429091042652" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://s2.loli.net/2023/04/29/czh9gJi7AoGSwUn.png" alt="image-20230429091136498" loading="lazy"></figure>
+<p>可以确认的是我们的基础配置是没有问题的了，那我们需要打开Gridea的<code>开发者工具</code>来进行错误排除了。</p>
+</li>
+</ul>
+<p><strong>开发者工具调试</strong></p>
+<ul>
+<li>
+<p>打开Gridea，点击左上角的编辑，下拉找到<code>开发者工具</code>，点击进入，会看到右侧弹出一个调试界面。</p>
+</li>
+<li>
+<p>进入之后， 我们在一级菜单中选择<code>Console</code>，需要点击一下箭头的<code>禁止</code>icon，用于清除当前杂乱的日志。</p>
+<figure data-type="image" tabindex="4"><img src="https://s2.loli.net/2023/04/29/QguBOINryp6ifAH.png" alt="image-20230429091658704" loading="lazy"></figure>
+</li>
+<li>
+<p>点击<code>同步</code>，过不久应该会跳出报错信息了。</p>
+<figure data-type="image" tabindex="5"><img src="https://s2.loli.net/2023/04/29/KScb8nIGpF4AJ9B.png" alt="image-20230429091937311" loading="lazy"></figure>
+</li>
+</ul>
+<blockquote>
+<p>&quot;One or more branches were not updated:   - refs/heads/main: push declined due to email privacy restrictions&quot;</p>
+</blockquote>
+<p>可以看到红色的报错信息， 写了是<code>“由于电子邮件隐私限制，推送被拒绝”</code>。 我们可以直接将上边的报错信息复制到Google上寻找答案。</p>
+<h1 id="github邮件设置">GitHub邮件设置</h1>
+<p>通过Google搜索报错的信息， 我们可以初定怀疑是GitHub的电子邮件设置问题，导致无法推送。</p>
+<figure data-type="image" tabindex="6"><img src="https://s2.loli.net/2023/04/29/bEaR4i6woCMGJkD.png" alt="image-20230429092612605" loading="lazy"></figure>
+<ul>
+<li>
+<p>进入GitHub主页，点击右上角个人头像， 点击<code>设置</code>进入设置页面。</p>
+</li>
+<li>
+<p>左侧栏点击<code>Emalls</code>,下来找到<code>Block command line pushes that expose my email</code>，去掉勾勾。</p>
+<figure data-type="image" tabindex="7"><img src="https://s2.loli.net/2023/04/29/drNhcVKAkS16HqW.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="8"><img src="https://s2.loli.net/2023/04/29/AEcJsIO1zpjZo6Y.png" alt="image-20230429093257683" loading="lazy"></figure>
+</li>
+</ul>
+<p>完成GitHub设置之后，返回Gridea继续推送，再看看有无其他的问题发生。</p>
+<figure data-type="image" tabindex="9"><img src="https://s2.loli.net/2023/04/29/Q1V293BfycEdsAl.png" alt="image-20230429093512317" loading="lazy"></figure>
+<p>如果你成功解决过Gridea的某一个问题， 欢迎留下您的解决方案，后期可以做个合辑来帮后来者少走很多弯路。</p>
+
+<span id="footnote"></span>
+<div id = "warn"></div>
+</div>
+<div class="toc-container"><ul class="markdownIt-TOC">
+<li><a href="#%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3">如何解决？</a></li>
+<li><a href="#github%E9%82%AE%E4%BB%B6%E8%AE%BE%E7%BD%AE">GitHub邮件设置</a></li>
+</ul>
+</div>
+</div>
+<div id="fullPage"><canvas id="canvas"></canvas></div>
+</article>
+<div id="eof"><span>EOF</span></div><div class="round-shape-one"></div>
+<section>
+<div class="doc_comments">
+
+</div></section>
+</div></div></div><script>
+"use strict";!function(){for(var n=document.getElementsByTagName("pre"),e=n.length,s=0;s<e;s++){n[s].innerHTML='<span class="line-number"></span>'+n[s].innerHTML+'<span class="cl"></span>';for(var a=n[s].innerHTML.split(/\n/).length,r=0;r<a-1;r++){n[s].getElementsByTagName("span")[0].innerHTML+="<span>"+(r+1)+"</span>"}}}();
+let mainNavLinks=document.querySelectorAll(".markdownIt-TOC a");window.addEventListener("scroll",event=>{let fromTop=window.scrollY;mainNavLinks.forEach((link,index)=>{let section=document.getElementById(decodeURI(link.hash).substring(1));let nextSection=null
+if(mainNavLinks[index+1]){nextSection=document.getElementById(decodeURI(mainNavLinks[index+1].hash).substring(1));}
+if(section.offsetTop<=fromTop){if(nextSection){if(nextSection.offsetTop>fromTop){link.classList.add("currentToc");}else{link.classList.remove("currentToc");}}else{link.classList.add("currentToc");}}else{link.classList.remove("currentToc");}});});
+var h=document.documentElement,b=document.body,st="scrollTop",sh="scrollHeight",progress=document.querySelector(".progress"),scroll;document.addEventListener("scroll",function(){scroll=(h[st]||b[st])/((h[sh]||b[sh])-h.clientHeight)*100;progress.style.setProperty("--scroll",scroll+"%")});
+var wxScale=new WxScale({fullPage:document.querySelector("#fullPage"),canvas:document.querySelector("#canvas")});var imgBox=document.querySelectorAll("#md_block img");for(var i=0;i<imgBox.length;i++){imgBox[i].onclick=function(e){wxScale.start(this)}};
+</script>
+<a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; display: block;"></a><div class="footer animated fadeInDown"><div class="site_footer"><div class="mysocials"><div class="my_socials"></div></div><div class="copyright"id="copyright">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>Copyright © 2018-2023 <a href="https://zhiqiu.vercel.app" style="margin:0;">之秋</a>.</div>
+<span style="display: inline;margin-right:15px;">👁<strong><span id="busuanzi_value_site_uv"></span></strong></span><span id="busuanzi_container_page_pv" style="display: inline;"><span>📚<strong>12</strong> posts</span></div></div>
+<script>
+console.log("\n %c \u26a1Theme: Bitcron-pro Author's Blog:https://blog.blinkstar.cn  Writen By Serence  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;", );
+</script>
+<script src="https://cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.min.js" type="module" defer></script>
+<script type="text/javascript" async src="https://zhiqiu.vercel.app/media/js/prism.js"></script>
+</body>
+</html>

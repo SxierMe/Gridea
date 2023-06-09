@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://zhiqiu.vercel.app</id>
+    <title>之秋</title>
+    <updated>2023-06-09T09:20:42.104Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://zhiqiu.vercel.app"/>
+    <link rel="self" href="https://zhiqiu.vercel.app/atom.xml"/>
+    <subtitle>随缘分享。</subtitle>
+    <logo>https://zhiqiu.vercel.app/images/avatar.png</logo>
+    <icon>https://zhiqiu.vercel.app/favicon.ico</icon>
+    <rights>All rights reserved 2023, 之秋</rights>
+    <entry>
+        <title type="html"><![CDATA[失落的访问权 - 解决Gridea因浏览器切换而无法访问的难题]]></title>
+        <id>https://zhiqiu.vercel.app/post/g3jpfwj2Y/</id>
+        <link href="https://zhiqiu.vercel.app/post/g3jpfwj2Y/">
+        </link>
+        <updated>2023-06-09T06:20:10.000Z</updated>
+        <summary type="html"><![CDATA[<p>因不可抗力的原因，我从edge浏览器切换到Chrome浏览器。成功切换使用后，突然发现Gridea无法预览以及无法访问任何链接....</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>因不可抗力的原因，我从edge浏览器切换到Chrome浏览器。成功切换使用后，突然发现Gridea无法预览以及无法访问任何链接....</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[跨越界限 - Chrome插件转换为Firefox插件的终极指南]]></title>
+        <id>https://zhiqiu.vercel.app/post/DOPi-1udp/</id>
+        <link href="https://zhiqiu.vercel.app/post/DOPi-1udp/">
+        </link>
+        <updated>2023-06-09T03:59:31.000Z</updated>
+        <summary type="html"><![CDATA[<p>用了两年edge，最后还得被迫切换edge....</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>用了两年edge，最后还得被迫切换edge....</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[跨越国界的无缝生活 - 用Notion做了个“数字移民”指南]]></title>
+        <id>https://zhiqiu.vercel.app/post/Ri0QnSsMW/</id>
+        <link href="https://zhiqiu.vercel.app/post/Ri0QnSsMW/">
+        </link>
+        <updated>2023-05-29T02:37:48.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[替换Clash Premium内核 - 让你的 Clash 更加 Clash]]></title>
+        <id>https://zhiqiu.vercel.app/post/z4J5rrwSI/</id>
+        <link href="https://zhiqiu.vercel.app/post/z4J5rrwSI/">
+        </link>
+        <updated>2023-05-03T07:53:28.000Z</updated>
+        <summary type="html"><![CDATA[<p>通过更换成Clash.Meta内核，让Clahs for Windows 支持更多的协议。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>通过更换成Clash.Meta内核，让Clahs for Windows 支持更多的协议。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Pake - 支持三端平台的一键网页打包桌面客户端程序]]></title>
+        <id>https://zhiqiu.vercel.app/post/RQpFHJhmC/</id>
+        <link href="https://zhiqiu.vercel.app/post/RQpFHJhmC/">
+        </link>
+        <updated>2023-04-29T15:02:44.000Z</updated>
+        <summary type="html"><![CDATA[<p>通过简单的操作，即可将一个网页打包成桌面客户端。全云端操作，无需下载任何程序，随用随卸，自由自在。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>通过简单的操作，即可将一个网页打包成桌面客户端。全云端操作，无需下载任何程序，随用随卸，自由自在。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gridea系列教程五：修改Gridea-theme-bitcron-pro 主题样式]]></title>
+        <id>https://zhiqiu.vercel.app/post/9zIxgaoYp/</id>
+        <link href="https://zhiqiu.vercel.app/post/9zIxgaoYp/">
+        </link>
+        <updated>2023-04-29T06:38:04.000Z</updated>
+        <summary type="html"><![CDATA[<p>对gridea-theme-bitcron-pro主题进行优化，感谢相关作者的付出。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>对gridea-theme-bitcron-pro主题进行优化，感谢相关作者的付出。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[WinSnap - 一个值得你下载的截图软件]]></title>
+        <id>https://zhiqiu.vercel.app/post/-2MVSJVrt/</id>
+        <link href="https://zhiqiu.vercel.app/post/-2MVSJVrt/">
+        </link>
+        <updated>2023-04-28T14:57:43.000Z</updated>
+        <summary type="html"><![CDATA[<p>WinSnap 是一个非常好用的截图软件，可以让你的截图更具美感。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>WinSnap 是一个非常好用的截图软件，可以让你的截图更具美感。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gridea系列教程三：解决Gridea同步问题]]></title>
+        <id>https://zhiqiu.vercel.app/post/gridea-xi-lie-jiao-cheng-san-jie-jue-gridea-tong-bu-wen-ti/</id>
+        <link href="https://zhiqiu.vercel.app/post/gridea-xi-lie-jiao-cheng-san-jie-jue-gridea-tong-bu-wen-ti/">
+        </link>
+        <updated>2023-04-28T10:55:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>有谁懂一个不懂程序的人解决Gridea同步问题是多么崩溃的？🤡</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>有谁懂一个不懂程序的人解决Gridea同步问题是多么崩溃的？🤡</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gridea系列教程二：实现Gridea自定义菜单]]></title>
+        <id>https://zhiqiu.vercel.app/post/gridea-xi-lie-jiao-cheng-yi-da-jian-zi-yi-de-jing-tai-bo-ke/</id>
+        <link href="https://zhiqiu.vercel.app/post/gridea-xi-lie-jiao-cheng-yi-da-jian-zi-yi-de-jing-tai-bo-ke/">
+        </link>
+        <updated>2023-04-28T10:53:29.000Z</updated>
+        <summary type="html"><![CDATA[<p>​	相信很多第一次适用Gridea博客程序的朋友们很难配置自己想要的菜单需求，本文将通过简单的描述让你随心的配置Gridea菜单。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>​	相信很多第一次适用Gridea博客程序的朋友们很难配置自己想要的菜单需求，本文将通过简单的描述让你随心的配置Gridea菜单。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[速度引擎 - 在Windows 11上引入BBR算法]]></title>
+        <id>https://zhiqiu.vercel.app/post/windows11-qie-huan-bbr-suan-fa/</id>
+        <link href="https://zhiqiu.vercel.app/post/windows11-qie-huan-bbr-suan-fa/">
+        </link>
+        <updated>2023-04-28T08:18:28.000Z</updated>
+        <summary type="html"><![CDATA[<p>本文通过简单的设置，无需重启电脑，即可让您的 Windows11 网络速度直接起飞。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>本文通过简单的设置，无需重启电脑，即可让您的 Windows11 网络速度直接起飞。</p>
+]]></content>
+    </entry>
+</feed>
