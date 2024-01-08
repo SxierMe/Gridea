@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://zhiqiu.vercel.app</id>
+    <title>之秋</title>
+    <updated>2024-01-08T04:09:43.406Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://zhiqiu.vercel.app"/>
+    <link rel="self" href="https://zhiqiu.vercel.app/atom.xml"/>
+    <subtitle>随缘分享。</subtitle>
+    <logo>https://zhiqiu.vercel.app/images/avatar.png</logo>
+    <icon>https://zhiqiu.vercel.app/favicon.ico</icon>
+    <rights>All rights reserved 2024, 之秋</rights>
+    <entry>
+        <title type="html"><![CDATA[Rime - 最强中文输入法引擎 + 雾凇拼音输入方案 配置]]></title>
+        <id>https://zhiqiu.vercel.app/post/2AGco8msp/</id>
+        <link href="https://zhiqiu.vercel.app/post/2AGco8msp/">
+        </link>
+        <updated>2024-01-08T04:06:25.000Z</updated>
+        <summary type="html"><![CDATA[<p>我记不清这是我第几次使用和安装Rime输入法引擎了，因为每次我都败兴而归。 也更记不清在互联网对线中屡屡落败的窘迫情景有多少次，因为我的输入法跟不上我的脑子。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>我记不清这是我第几次使用和安装Rime输入法引擎了，因为每次我都败兴而归。 也更记不清在互联网对线中屡屡落败的窘迫情景有多少次，因为我的输入法跟不上我的脑子。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[读《埃隆 · 马斯克》传记十条启发]]></title>
+        <id>https://zhiqiu.vercel.app/post/8Cf8pMNqk/</id>
+        <link href="https://zhiqiu.vercel.app/post/8Cf8pMNqk/">
+        </link>
+        <updated>2023-09-21T02:23:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>因为是读完之后才编写的，想到什么就写什么了。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>因为是读完之后才编写的，想到什么就写什么了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Thorium - 地球上速度最快的浏览器]]></title>
+        <id>https://zhiqiu.vercel.app/post/DuQAkyqFf/</id>
+        <link href="https://zhiqiu.vercel.app/post/DuQAkyqFf/">
+        </link>
+        <updated>2023-09-13T04:06:24.000Z</updated>
+        <summary type="html"><![CDATA[<p>thorium是基于chromium内核魔改而成的。开发者称对比chrome，thorium提升了8-30%的性能。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>thorium是基于chromium内核魔改而成的。开发者称对比chrome，thorium提升了8-30%的性能。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[202309]亲测使用iPhone美区Apple ID 开通或续费 ChatGPT Plus ]]></title>
+        <id>https://zhiqiu.vercel.app/post/9DZECF_6n/</id>
+        <link href="https://zhiqiu.vercel.app/post/9DZECF_6n/">
+        </link>
+        <updated>2023-09-06T00:38:23.000Z</updated>
+        <summary type="html"><![CDATA[<p>ChatGPT相信大家都不陌生了，作者因工作需要ChatGPT Plus，但受限于手头没有外币卡，无法绑定或是付费。淘宝代付虽说可以，但终归是不够安全(手续费太高了...)。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>ChatGPT相信大家都不陌生了，作者因工作需要ChatGPT Plus，但受限于手头没有外币卡，无法绑定或是付费。淘宝代付虽说可以，但终归是不够安全(手续费太高了...)。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[丝滑上网自动切换 - NNR流量转发配置DDNS 实现无感高速冲浪]]></title>
+        <id>https://zhiqiu.vercel.app/post/20ZHx5sxT/</id>
+        <link href="https://zhiqiu.vercel.app/post/20ZHx5sxT/">
+        </link>
+        <updated>2023-09-02T16:24:11.000Z</updated>
+        <summary type="html"><![CDATA[<p>因为最近NNR更换了中转服务器的IP，所以我之前建立的流量中转订阅或是节点都需要手动去更换新的IP。本来是想写个脚本来是现在自动更换，但没想到NNR还有配套的服务来实现。这又可以省心使用了。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>因为最近NNR更换了中转服务器的IP，所以我之前建立的流量中转订阅或是节点都需要手动去更换新的IP。本来是想写个脚本来是现在自动更换，但没想到NNR还有配套的服务来实现。这又可以省心使用了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Geek Uninstaller - 无痕卸载，让你的电脑焕然一新]]></title>
+        <id>https://zhiqiu.vercel.app/post/tnbHaENLs/</id>
+        <link href="https://zhiqiu.vercel.app/post/tnbHaENLs/">
+        </link>
+        <updated>2023-06-09T08:29:59.000Z</updated>
+        <summary type="html"><![CDATA[<p>我们在日常使用电脑的时候，经常会安装一些感觉有用的软件，然后使用一段时间后觉得不合适或是找到更好的替代品之后对其卸载。但不完全的卸载会让我们的电脑会残留各种文件，俗称软件留种。日积月累之后，残留的各个文件和注册表堆积可能会影响电脑的性能。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>我们在日常使用电脑的时候，经常会安装一些感觉有用的软件，然后使用一段时间后觉得不合适或是找到更好的替代品之后对其卸载。但不完全的卸载会让我们的电脑会残留各种文件，俗称软件留种。日积月累之后，残留的各个文件和注册表堆积可能会影响电脑的性能。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[失落的访问权 - 解决Gridea因浏览器切换而无法访问的难题]]></title>
+        <id>https://zhiqiu.vercel.app/post/g3jpfwj2Y/</id>
+        <link href="https://zhiqiu.vercel.app/post/g3jpfwj2Y/">
+        </link>
+        <updated>2023-06-09T06:20:10.000Z</updated>
+        <summary type="html"><![CDATA[<p>因不可抗力的原因，我从edge浏览器切换到Chrome浏览器。成功切换使用后，突然发现Gridea无法预览以及无法访问任何链接....</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>因不可抗力的原因，我从edge浏览器切换到Chrome浏览器。成功切换使用后，突然发现Gridea无法预览以及无法访问任何链接....</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[跨越界限 - Chrome插件转换为Firefox插件的终极指南]]></title>
+        <id>https://zhiqiu.vercel.app/post/DOPi-1udp/</id>
+        <link href="https://zhiqiu.vercel.app/post/DOPi-1udp/">
+        </link>
+        <updated>2023-06-09T03:59:31.000Z</updated>
+        <summary type="html"><![CDATA[<p>用了两年edge，最后还得被迫切换edge....</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>用了两年edge，最后还得被迫切换edge....</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[跨越国界的无缝生活 - 用Notion做了个“数字移民”指南]]></title>
+        <id>https://zhiqiu.vercel.app/post/Ri0QnSsMW/</id>
+        <link href="https://zhiqiu.vercel.app/post/Ri0QnSsMW/">
+        </link>
+        <updated>2023-05-29T02:37:48.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[替换Clash Premium内核 - 让你的 Clash 更加 Clash]]></title>
+        <id>https://zhiqiu.vercel.app/post/z4J5rrwSI/</id>
+        <link href="https://zhiqiu.vercel.app/post/z4J5rrwSI/">
+        </link>
+        <updated>2023-05-03T07:53:28.000Z</updated>
+        <summary type="html"><![CDATA[<p>通过更换成Clash.Meta内核，让Clahs for Windows 支持更多的协议。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>通过更换成Clash.Meta内核，让Clahs for Windows 支持更多的协议。</p>
+]]></content>
+    </entry>
+</feed>
