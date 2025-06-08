@@ -1,0 +1,209 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>「Gridea专题」解决Gridea客户端无法实现预览的问题 | 参考资料</title>
+
+<link rel="shortcut icon" href="https://zhiqiu.vercel.app/favicon.ico?v=1749378701100">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://zhiqiu.vercel.app/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y83LE2TXWN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-Y83LE2TXWN');
+    </script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            参考资料
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://zhiqiu.vercel.app/tag/cKe15wqX8/" class="menu gt-a-link">
+                            技术
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://zhiqiu.vercel.app/tag/PkviOmBYa/" class="menu gt-a-link">
+                            效率
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://zhiqiu.vercel.app/tag/-SUFGLPsZ/" class="menu gt-a-link">
+                            精选推荐
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://dr.cchostvps.xyz/" class="menu gt-a-link" target="_blank">
+                            数字避难
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/post/about" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1749378701100" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    「Gridea专题」解决Gridea客户端无法实现预览的问题
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2023-06-09 ·
+                    </time>
+                    
+                        <a href="https://zhiqiu.vercel.app/tag/cKe15wqX8/" class="post-tags">
+                            # 技术
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p>因不可抗力的原因，我从edge浏览器切换到Chrome浏览器。成功切换使用后，突然发现Gridea无法预览以及无法访问任何链接....</p>
+<!-- more -->
+<h1 id="症状描述">症状描述</h1>
+<figure data-type="image" tabindex="1"><img src="https://s2.loli.net/2023/06/09/QVIHl4uAcNTg8vX.png" alt="" loading="lazy"></figure>
+<ul>
+<li>点击预览显示渲染成功，但不会跳到浏览器自动打开页面。</li>
+<li>点击小地球和GitHub icon无任何反应。</li>
+</ul>
+<h1 id="问题解决">问题解决</h1>
+<ul>
+<li>
+<p>进入Windows设置页面，找到应用并点击默认应用<br>
+<img src="https://s2.loli.net/2023/06/09/FtkgGV3rDhxYcA9.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>在“为文件类型或链接类型设置默认值”填入 <strong>HTTPS</strong> 并点击<br>
+<img src="https://s2.loli.net/2023/06/09/Unm8r9VzCx7GNTB.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>选择你的默认浏览器即可<br>
+<img src="https://s2.loli.net/2023/06/09/AVwDnuWq597T3RQ.png" alt="" loading="lazy"></p>
+</li>
+</ul>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://zhiqiu.vercel.app/post/DOPi-1udp/" class="post-title gt-a-link">
+                    Chrome浏览器插件转换为Firefox浏览器插件的终极指南
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">专注于提供注册教程与机场评测的权威指南。</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://zhiqiu.vercel.app/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

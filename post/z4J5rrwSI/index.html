@@ -1,0 +1,234 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>替换Clash Premium内核 - 让你的 Clash 更加 Clash | 参考资料</title>
+
+<link rel="shortcut icon" href="https://zhiqiu.vercel.app/favicon.ico?v=1749378701100">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://zhiqiu.vercel.app/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y83LE2TXWN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-Y83LE2TXWN');
+    </script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            参考资料
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://zhiqiu.vercel.app/tag/cKe15wqX8/" class="menu gt-a-link">
+                            技术
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://zhiqiu.vercel.app/tag/PkviOmBYa/" class="menu gt-a-link">
+                            效率
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://zhiqiu.vercel.app/tag/-SUFGLPsZ/" class="menu gt-a-link">
+                            精选推荐
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://dr.cchostvps.xyz/" class="menu gt-a-link" target="_blank">
+                            数字避难
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/post/about" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1749378701100" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    替换Clash Premium内核 - 让你的 Clash 更加 Clash
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2023-05-03 ·
+                    </time>
+                    
+                        <a href="https://zhiqiu.vercel.app/tag/-SUFGLPsZ/" class="post-tags">
+                            # 红杏
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p>通过更换成Clash.Meta内核，让Clahs for Windows 支持更多的协议。</p>
+<!-- more -->
+<h1 id="一-简单介绍">一、简单介绍</h1>
+<p>Clash.Meta版本是Clash Premium中二次开发的版本，Meta对于协议的支持以及其他方面更加激进，而Clash Premium内核由于自身的安全以及稳定的的考量下，对新兴协议的支持会有一定的迟滞性。<br>
+所以如果我们自建的协议可能较新的话（如Hysteria、Reality等），那Clash Premium内核是不支持的，需要我们手动更换成Clash.Meta内核。<br>
+<img src="https://s2.loli.net/2023/04/28/anMD2N8PBIFwqEl.png" alt="" loading="lazy"></p>
+<h1 id="二-准备工作">二、准备工作</h1>
+<ul>
+<li>
+<p>Clash for Windows下载：<a href="https://github.com/Fndroid/clash_for_windows_pkg/releases">github</a><br>
+选择你电脑系统的版本进行下载(这个大家应该下载过)<br>
+<img src="https://s2.loli.net/2023/04/29/rCABXRfY5UI2SQZ.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>Clash.Meta 内核下载（切记不要下载成客户端了）：<a href="https://github.com/MetaCubeX/Clash.Meta/releases/tag/v1.14.3">github</a></p>
+<p>Windows选择兼容版本下载（推荐）并解压，得到<code>clash.meta-windows-amd64-compatible-v1.14.3.exe</code>这个文件。<br>
+<img src="https://s2.loli.net/2023/04/29/EXlxFR4v6SHckbU.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p><strong><code>退出所有clash 程序</code></strong></p>
+</li>
+</ul>
+<h1 id="三-内核替换">三、内核替换</h1>
+<ol>
+<li>
+<p>用你的文件搜索软件搜索<code>clash-win64.exe</code> ，此处我是使用Everything。</p>
+</li>
+<li>
+<p>右键点击打开Clash for window的安装路径，进入文件夹。<br>
+<img src="https://s2.loli.net/2023/04/29/FVM5acgkxHKSZIP.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>进入文件后，将找到的<code>clash-win64.exe</code> 修改备份，以防翻车。复制一份由原<code>clash-win64.exe</code>改成<code>backup-clash-win64.exe</code>，改好之后删除<code>clash-win64.exe</code>。<br>
+<img src="https://s2.loli.net/2023/05/03/TmpqAW5CwXI8QEd.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>将下载的<code>clash.meta-windows-amd64-compatible-v1.14.3.exe </code>剪贴进去，并将文件修改成<code>clash-win64.exe</code><br>
+<img src="https://s2.loli.net/2023/05/03/FRBHJmhvodqAbYP.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>启动 Clash for Windows，此时你可以可以看到Clash Core 是 <code>unknown</code> ，那就证明是成功替换了。<br>
+<img src="https://s2.loli.net/2023/04/28/bZFu7lTzvx5ewHV.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>导入你的测试节点，进行上网测试<br>
+<img src="https://s2.loli.net/2023/05/03/Sehf4HKCylzGitX.png" alt="" loading="lazy"></p>
+</li>
+</ol>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://zhiqiu.vercel.app/post/RQpFHJhmC/" class="post-title gt-a-link">
+                    Pake - 支持三端平台的一键网页打包桌面客户端程序
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">专注于提供注册教程与机场评测的权威指南。</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://zhiqiu.vercel.app/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

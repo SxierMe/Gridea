@@ -1,0 +1,235 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>「Windows系列」如何在Windows 11上引入并安装BBR拥塞算法 | 参考资料</title>
+
+<link rel="shortcut icon" href="https://zhiqiu.vercel.app/favicon.ico?v=1749378701100">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://zhiqiu.vercel.app/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y83LE2TXWN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-Y83LE2TXWN');
+    </script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            参考资料
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://zhiqiu.vercel.app/tag/cKe15wqX8/" class="menu gt-a-link">
+                            技术
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://zhiqiu.vercel.app/tag/PkviOmBYa/" class="menu gt-a-link">
+                            效率
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://zhiqiu.vercel.app/tag/-SUFGLPsZ/" class="menu gt-a-link">
+                            精选推荐
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://dr.cchostvps.xyz/" class="menu gt-a-link" target="_blank">
+                            数字避难
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/post/about" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1749378701100" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    「Windows系列」如何在Windows 11上引入并安装BBR拥塞算法
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2023-04-28 ·
+                    </time>
+                    
+                        <a href="https://zhiqiu.vercel.app/tag/cKe15wqX8/" class="post-tags">
+                            # 技术
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p>本文通过简单的设置，无需重启电脑，即可让您的 Windows11 网络速度直接起飞。</p>
+<!-- more -->
+<h1 id="一-什么是bbr算法">一、什么是BBR算法？</h1>
+<p>​	BBR (Bottleneck Bandwidth and Round-trip propagation time) 是一种拥塞控制算法，用于优化 TCP 协议在高带宽、高丢包网络环境下的性能。它可以根据当前网络的拥塞情况和延迟来自适应地调整发送速率，以达到最大的网络吞吐量和最小的延迟。BBR算法通过动态的测量和估计网络带宽和延迟等参数，确定合适的拥塞窗口大小，从而达到更好的传输效果。BBR算法目前已被广泛应用于Google的网络服务中，例如YouTube和Google Cloud平台。</p>
+<h1 id="二-目前windows-默认的算法是什么">二、目前Windows 默认的算法是什么？</h1>
+<p>​	CUBIC (Cubic TCP) 算法是一种与 BB-Reno 算法类似的拥塞控制算法，但是与 BB-Reno 算法不同的是，CUBIC 算法采用了一种非线性拥塞窗口增长方式，可以更好地适应高带宽、高延迟的网络环境。</p>
+<p>CUBIC 算法的拥塞控制窗口类似于一个立方体的增长曲线，采用了一种基于拥塞窗口的拟合曲线计算机制，通过对丢包事件的监控来调节窗口大小，实现拥塞避免和控制。CUBIC 算法可以在网络拥塞时自动进行拥塞避免和恢复措施，确保网络性能的稳定和流畅。</p>
+<p>CUBIC 算法已经被广泛应用于 Linux TCP 模块中，并且还被用于各种广域网和互联网环境中，是一种非常实用的拥塞控制算法。</p>
+<h1 id="三-两者有什么区别">三、两者有什么区别？</h1>
+<p>BBR算法和CUBIC算法有以下几个本质不同点：</p>
+<ol>
+<li>
+<p>算法的思想不同：BBR算法的核心思想是维持网络中最后一个瓶颈链路的带宽和延迟，即以网络的最小带宽和最大延迟为基准进行拥塞控制；而CUBIC算法采用了一种类似于拟合曲线的方式计算拥塞窗口大小。</p>
+</li>
+<li>
+<p>算法的参数不同：BBR算法需要动态的测量和估计带宽和延迟等网络参数；而CUBIC算法则是根据拥塞窗口大小的变化来进行自适应控制。</p>
+</li>
+<li>
+<p>算法的适用环境不同：BBR算法更适合高带宽、高延迟、小数据包的网络环境，例如Google的网络服务，而CUBIC算法更适用于高带宽、长距离的广域网环境。</p>
+</li>
+</ol>
+<h1 id="四-什么环境下使用不同的算法">四、什么环境下使用不同的算法？</h1>
+<p>​	简单来说，选择合适的拥塞控制算法要根据网络环境的情况来定。一般来说，当网络的带宽较大、丢包率较低时，BBR算法表现得更好，因为它能够更快地发现网络中存在的带宽并充分利用它。而当网络的带宽较小、丢包率较高时，CUBIC算法能够更好地适应网络状况，减少数据包的丢失和网络拥塞情况的发生。所以，在选择算法时，需要结合实际网络状况和需求来进行选择。</p>
+<h1 id="五-实现windows11-切换bbr算法">五、实现Windows11 切换BBR算法</h1>
+<p><strong>5.1</strong> 查看当前的算法</p>
+<ul>
+<li>
+<p>以管理员身份打开Powershell</p>
+<img src="https://s2.loli.net/2023/04/27/XNA6U8DROQBxoW7.png" alt="image-20230427085000812" style="zoom:67%;" />
+</li>
+<li>
+<p>输入命令查看当前的算法</p>
+<pre><code class="language-shell"> NetTCPSetting | Select SettingName, CongestionProvider
+</code></pre>
+</li>
+</ul>
+<p><strong>5.2</strong> 切换BBR算法</p>
+<ul>
+<li>
+<p>逐条输入命令</p>
+<pre><code class="language-shell">netsh int tcp set supplemental template=Internet congestionprovider=BBR2
+netsh int tcp set supplemental template=InternetCustom congestionprovider=BBR2
+netsh int tcp set supplemental template=Datacenter congestionprovider=BBR2
+netsh int tcp set supplemental template=DatacenterCustom congestionprovider=BBR2
+netsh int tcp set supplemental template=Compat congestionprovider=BBR2
+</code></pre>
+<img src="https://s2.loli.net/2023/04/27/YoIdMHwPz9cBnGE.png" alt="image-20230427085444420" style="zoom:67%;" />
+</li>
+</ul>
+<p>​		全部都是确定之后，输入查看当前算法的命令再次确认是否正确切换。</p>
+<p>​							<img src="https://s2.loli.net/2023/04/27/4NncGRCphEvguIT.png" alt="image-20230427085605114" style="zoom:67%;" /></p>
+<h1 id="六-备注">六、备注</h1>
+<ul>
+<li>无需重启电脑，切换就能用。</li>
+<li>要是BBR启用后网络变慢，请按照上述步骤 切换成 <code>CUBIC</code>即可。</li>
+</ul>
+
+                </div>
+            </article>
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">专注于提供注册教程与机场评测的权威指南。</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://zhiqiu.vercel.app/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

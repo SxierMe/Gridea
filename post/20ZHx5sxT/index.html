@@ -1,0 +1,256 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>NNR流量转发配置DDNS 实现IP自动切换无人值守 | 参考资料</title>
+
+<link rel="shortcut icon" href="https://zhiqiu.vercel.app/favicon.ico?v=1749378701100">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://zhiqiu.vercel.app/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y83LE2TXWN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-Y83LE2TXWN');
+    </script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            参考资料
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://zhiqiu.vercel.app/tag/cKe15wqX8/" class="menu gt-a-link">
+                            技术
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://zhiqiu.vercel.app/tag/PkviOmBYa/" class="menu gt-a-link">
+                            效率
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://zhiqiu.vercel.app/tag/-SUFGLPsZ/" class="menu gt-a-link">
+                            精选推荐
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://dr.cchostvps.xyz/" class="menu gt-a-link" target="_blank">
+                            数字避难
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/post/about" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1749378701100" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    NNR流量转发配置DDNS 实现IP自动切换无人值守
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2023-09-03 ·
+                    </time>
+                    
+                        <a href="https://zhiqiu.vercel.app/tag/-SUFGLPsZ/" class="post-tags">
+                            # 红杏
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p>因为最近NNR更换了中转服务器的IP，所以我之前建立的流量中转订阅或是节点都需要手动去更换新的IP。本来是想写个脚本来是现在自动更换，但没想到NNR还有配套的服务来实现。这又可以省心使用了。</p>
+<!-- more -->
+<h1 id="ddns-为何物">DDNS 为何物</h1>
+<p>DDNS可以简单理解为在不断变换IP的设备中，你始终捕获可以通过一个域名来连接你的设备。这样可以不用每次手动更新你的IP地址。<br>
+设备每次变化的IP地址，然后将其与域名相对应，这样其他上网用户就可以通过域名来进行交流。而最终客户所要记忆的全部，就是记住动态域名商给予的域名即可，而不用去管他们是如何实现的。<br>
+后边了解了下NNR 是支持通过DDNS来更新IP，通过DDNS，我们后续的服务器变更IP后， 就不需要手工去更新IP了，实现了完美的自动更新。</p>
+<h1 id="准备工作">准备工作</h1>
+<ul>
+<li>CloudFlare 账号</li>
+<li>NNR 账号</li>
+<li>（可选）自建节点并对接好NNR</li>
+</ul>
+<h1 id="cloudflare-令牌创建">CloudFlare 令牌创建</h1>
+<p>本篇教程是使用cloudflare解析的域名。首先点击进入cloudflare的令牌设置页面（地址）</p>
+<ul>
+<li>
+<p>点击创建令牌<br>
+<img src="https://s2.loli.net/2023/07/31/vxBjtG1kHyYZOdw.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>点击 编辑区域DNS 对应的使用模板<br>
+<img src="https://s2.loli.net/2023/07/31/hgNj98YuGHaFQvq.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>选择你的域名<br>
+<img src="https://s2.loli.net/2023/07/31/dagxGlzv46rNXnQ.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>点击 继续以显示摘要<br>
+<img src="https://dr.cchostvps.xyz/wp-content/uploads/2023/07/image-1024x654.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>出现了你的邮箱账号绑定的域名，点击创建令牌<br>
+<img src="https://dr.cchostvps.xyz/wp-content/uploads/2023/07/image-1.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>点击copy<br>
+<img src="https://s2.loli.net/2023/07/31/zH7K9wkp6aQ4hMD.png" alt="" loading="lazy"></p>
+</li>
+</ul>
+<h1 id="nnr-配置-ddns">NNR 配置 DDNS</h1>
+<ul>
+<li>
+<p>登录<a href="https://nnr.moe?aff=4595">NNR</a> 用户中心 - 点击 设置<br>
+<img src="https://dr.cchostvps.xyz/wp-content/uploads/2023/07/image-3-1024x190.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>首先黏贴你刚刚复制的令牌</p>
+</li>
+<li>
+<p>然后输入你的域名（如：google.com）</p>
+</li>
+<li>
+<p>区域ID 不用管，后边会自动冒出来</p>
+</li>
+<li>
+<p>先点击保存，然后再点击更新DDNS<br>
+<img src="https://dr.cchostvps.xyz/wp-content/uploads/2023/07/image-4-1024x377.png" alt="" loading="lazy"><br>
+<strong>添加节点</strong></p>
+</li>
+<li>
+<p>添加节点的细节我就不多说了，直接看DDNS<br>
+<img src="https://dr.cchostvps.xyz/wp-content/uploads/2023/07/image-5-1024x120.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>将源复制到你的节点里边，然后稍等两分钟进行解析。完美~<br>
+<img src="https://s2.loli.net/2023/07/31/1mAXgbtMRqwQVPF.png" alt="" loading="lazy"></p>
+</li>
+</ul>
+<p>END</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://zhiqiu.vercel.app/post/tnbHaENLs/" class="post-title gt-a-link">
+                    「软件推荐」Geek Uninstaller - 免费的Windows电脑清理卸载工具软件
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">专注于提供注册教程与机场评测的权威指南。</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://zhiqiu.vercel.app/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

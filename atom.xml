@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://zhiqiu.vercel.app</id>
+    <title>参考资料</title>
+    <updated>2025-06-08T10:31:45.302Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://zhiqiu.vercel.app"/>
+    <link rel="self" href="https://zhiqiu.vercel.app/atom.xml"/>
+    <subtitle>专注于提供注册教程与机场评测的权威指南。</subtitle>
+    <logo>https://zhiqiu.vercel.app/images/avatar.png</logo>
+    <icon>https://zhiqiu.vercel.app/favicon.ico</icon>
+    <rights>All rights reserved 2025, 参考资料</rights>
+    <entry>
+        <title type="html"><![CDATA[2分钟完成Markdown开源神器Marktext的安装与汉化步骤]]></title>
+        <id>https://zhiqiu.vercel.app/post/marktextinstall/</id>
+        <link href="https://zhiqiu.vercel.app/post/marktextinstall/">
+        </link>
+        <updated>2024-11-26T03:15:53.000Z</updated>
+        <summary type="html"><![CDATA[<p>MarkText 是一款开源的 Markdown 编辑器，专为提供简洁和优雅的写作体验而设计。它支持多平台使用，包括 Linux、macOS 和 Windows 系统。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>MarkText 是一款开源的 Markdown 编辑器，专为提供简洁和优雅的写作体验而设计。它支持多平台使用，包括 Linux、macOS 和 Windows 系统。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[「机场VPN推荐」自用的金融级IEPL高稳定低延迟原生家宽IP机场]]></title>
+        <id>https://zhiqiu.vercel.app/post/meslcloud/</id>
+        <link href="https://zhiqiu.vercel.app/post/meslcloud/">
+        </link>
+        <updated>2024-04-16T06:44:31.000Z</updated>
+        <summary type="html"><![CDATA[<p>MESL Cloud机场，成立于2022年，提供Shadowsocks协议与IEPL专线传输，确保高稳定性和安全性。支持Netflix、Disney+等流媒体解锁，拥有多种节点套餐选择，满足不同用户需求。提供专用新疆节点及全球节点覆盖。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>MESL Cloud机场，成立于2022年，提供Shadowsocks协议与IEPL专线传输，确保高稳定性和安全性。支持Netflix、Disney+等流媒体解锁，拥有多种节点套餐选择，满足不同用户需求。提供专用新疆节点及全球节点覆盖。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Rime - 最强中文输入法引擎 + 雾凇拼音输入方案 配置]]></title>
+        <id>https://zhiqiu.vercel.app/post/2AGco8msp/</id>
+        <link href="https://zhiqiu.vercel.app/post/2AGco8msp/">
+        </link>
+        <updated>2024-01-08T04:06:25.000Z</updated>
+        <summary type="html"><![CDATA[<p>我记不清这是我第几次使用和安装Rime输入法引擎了，因为每次我都败兴而归。 也更记不清在互联网对线中屡屡落败的窘迫情景有多少次，因为我的输入法跟不上我的脑子。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>我记不清这是我第几次使用和安装Rime输入法引擎了，因为每次我都败兴而归。 也更记不清在互联网对线中屡屡落败的窘迫情景有多少次，因为我的输入法跟不上我的脑子。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[「软件推荐」Thorium Browser - 号称是地球上速度最快的浏览器]]></title>
+        <id>https://zhiqiu.vercel.app/post/DuQAkyqFf/</id>
+        <link href="https://zhiqiu.vercel.app/post/DuQAkyqFf/">
+        </link>
+        <updated>2023-09-13T04:06:24.000Z</updated>
+        <summary type="html"><![CDATA[<p>thorium是基于chromium内核魔改而成的。开发者称对比chrome，thorium提升了8-30%的性能。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>thorium是基于chromium内核魔改而成的。开发者称对比chrome，thorium提升了8-30%的性能。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[2024]亲测使用iPhone美区Apple ID 开通或续费 ChatGPT Plus ]]></title>
+        <id>https://zhiqiu.vercel.app/post/9DZECF_6n/</id>
+        <link href="https://zhiqiu.vercel.app/post/9DZECF_6n/">
+        </link>
+        <updated>2023-09-06T00:38:23.000Z</updated>
+        <summary type="html"><![CDATA[<p>ChatGPT相信大家都不陌生了，作者因工作需要ChatGPT Plus，但受限于手头没有外币卡，无法绑定或是付费。淘宝代付虽说可以，但终归是不够安全(手续费太高了...)。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>ChatGPT相信大家都不陌生了，作者因工作需要ChatGPT Plus，但受限于手头没有外币卡，无法绑定或是付费。淘宝代付虽说可以，但终归是不够安全(手续费太高了...)。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NNR流量转发配置DDNS 实现IP自动切换无人值守]]></title>
+        <id>https://zhiqiu.vercel.app/post/20ZHx5sxT/</id>
+        <link href="https://zhiqiu.vercel.app/post/20ZHx5sxT/">
+        </link>
+        <updated>2023-09-02T16:24:11.000Z</updated>
+        <summary type="html"><![CDATA[<p>因为最近NNR更换了中转服务器的IP，所以我之前建立的流量中转订阅或是节点都需要手动去更换新的IP。本来是想写个脚本来是现在自动更换，但没想到NNR还有配套的服务来实现。这又可以省心使用了。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>因为最近NNR更换了中转服务器的IP，所以我之前建立的流量中转订阅或是节点都需要手动去更换新的IP。本来是想写个脚本来是现在自动更换，但没想到NNR还有配套的服务来实现。这又可以省心使用了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[「软件推荐」Geek Uninstaller - 免费的Windows电脑清理卸载工具软件]]></title>
+        <id>https://zhiqiu.vercel.app/post/tnbHaENLs/</id>
+        <link href="https://zhiqiu.vercel.app/post/tnbHaENLs/">
+        </link>
+        <updated>2023-06-09T08:29:59.000Z</updated>
+        <summary type="html"><![CDATA[<p>我们在日常使用电脑的时候，经常会安装一些感觉有用的软件，然后使用一段时间后觉得不合适或是找到更好的替代品之后对其卸载。但不完全的卸载会让我们的电脑会残留各种文件，俗称软件留种。日积月累之后，残留的各个文件和注册表堆积可能会影响电脑的性能。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>我们在日常使用电脑的时候，经常会安装一些感觉有用的软件，然后使用一段时间后觉得不合适或是找到更好的替代品之后对其卸载。但不完全的卸载会让我们的电脑会残留各种文件，俗称软件留种。日积月累之后，残留的各个文件和注册表堆积可能会影响电脑的性能。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[「Gridea专题」解决Gridea客户端无法实现预览的问题]]></title>
+        <id>https://zhiqiu.vercel.app/post/g3jpfwj2Y/</id>
+        <link href="https://zhiqiu.vercel.app/post/g3jpfwj2Y/">
+        </link>
+        <updated>2023-06-09T06:20:10.000Z</updated>
+        <summary type="html"><![CDATA[<p>因不可抗力的原因，我从edge浏览器切换到Chrome浏览器。成功切换使用后，突然发现Gridea无法预览以及无法访问任何链接....</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>因不可抗力的原因，我从edge浏览器切换到Chrome浏览器。成功切换使用后，突然发现Gridea无法预览以及无法访问任何链接....</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Chrome浏览器插件转换为Firefox浏览器插件的终极指南]]></title>
+        <id>https://zhiqiu.vercel.app/post/DOPi-1udp/</id>
+        <link href="https://zhiqiu.vercel.app/post/DOPi-1udp/">
+        </link>
+        <updated>2023-06-09T03:59:31.000Z</updated>
+        <summary type="html"><![CDATA[<p>用了两年edge，最后还得被迫切换edge....</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>用了两年edge，最后还得被迫切换edge....</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[跨越国界的无缝生活 - 用Notion做了个“数字移民”指南]]></title>
+        <id>https://zhiqiu.vercel.app/post/Ri0QnSsMW/</id>
+        <link href="https://zhiqiu.vercel.app/post/Ri0QnSsMW/">
+        </link>
+        <updated>2023-05-29T02:37:48.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[替换Clash Premium内核 - 让你的 Clash 更加 Clash]]></title>
+        <id>https://zhiqiu.vercel.app/post/z4J5rrwSI/</id>
+        <link href="https://zhiqiu.vercel.app/post/z4J5rrwSI/">
+        </link>
+        <updated>2023-05-03T07:53:28.000Z</updated>
+        <summary type="html"><![CDATA[<p>通过更换成Clash.Meta内核，让Clahs for Windows 支持更多的协议。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>通过更换成Clash.Meta内核，让Clahs for Windows 支持更多的协议。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Pake - 支持三端平台的一键网页打包桌面客户端程序]]></title>
+        <id>https://zhiqiu.vercel.app/post/RQpFHJhmC/</id>
+        <link href="https://zhiqiu.vercel.app/post/RQpFHJhmC/">
+        </link>
+        <updated>2023-04-29T15:02:44.000Z</updated>
+        <summary type="html"><![CDATA[<p>通过简单的操作，即可将一个网页打包成桌面客户端。全云端操作，无需下载任何程序，随用随卸，自由自在。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>通过简单的操作，即可将一个网页打包成桌面客户端。全云端操作，无需下载任何程序，随用随卸，自由自在。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[「Gridea专题」修改Gridea-theme-bitcron-pro 主题样式]]></title>
+        <id>https://zhiqiu.vercel.app/post/9zIxgaoYp/</id>
+        <link href="https://zhiqiu.vercel.app/post/9zIxgaoYp/">
+        </link>
+        <updated>2023-04-29T06:38:04.000Z</updated>
+        <summary type="html"><![CDATA[<p>对gridea-theme-bitcron-pro主题进行优化，感谢相关作者的付出。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>对gridea-theme-bitcron-pro主题进行优化，感谢相关作者的付出。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[「软件推荐」WinSnap | 一个屏幕截图并可编辑的界面捕捉工具]]></title>
+        <id>https://zhiqiu.vercel.app/post/-2MVSJVrt/</id>
+        <link href="https://zhiqiu.vercel.app/post/-2MVSJVrt/">
+        </link>
+        <updated>2023-04-28T14:57:43.000Z</updated>
+        <summary type="html"><![CDATA[<p>WinSnap 是一个非常好用的截图软件，可以让你的截图更具美感。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>WinSnap 是一个非常好用的截图软件，可以让你的截图更具美感。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[「Gridea专题」解决Gridea静态写作客户端的同步遇到了错误问题]]></title>
+        <id>https://zhiqiu.vercel.app/post/gridea-xi-lie-jiao-cheng-san-jie-jue-gridea-tong-bu-wen-ti/</id>
+        <link href="https://zhiqiu.vercel.app/post/gridea-xi-lie-jiao-cheng-san-jie-jue-gridea-tong-bu-wen-ti/">
+        </link>
+        <updated>2023-04-28T10:55:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>有谁懂一个不懂程序的人解决Gridea同步问题是多么崩溃的？🤡</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>有谁懂一个不懂程序的人解决Gridea同步问题是多么崩溃的？🤡</p>
+]]></content>
+    </entry>
+</feed>
